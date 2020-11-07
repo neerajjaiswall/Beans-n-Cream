@@ -41,7 +41,7 @@ public class chickencost extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Monospaced", 1, 22)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "     Items                     cost", " ", " chicken Biryani              150 /-", " chicken soup                 50 /-", " chicken noodles              70 /-", " fried chicken                150 /-", " chicken fries                150 /-", " italian chicken              200 /-", " american chicken             240 /-", " chicken hotdog               120 /-", " ", " " };
+            String[] strings = { "     Items                     cost", " ", " chicken Biryani              150 /-", " chicken soup                 50 /-", " chicken noodles              70 /-", " fried chicken                150 /-", " chicken fries                150 /-", " italian chicken              200 /-", " crispy chicken             240 /-", " chicken hotdog               120 /-", " ", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });

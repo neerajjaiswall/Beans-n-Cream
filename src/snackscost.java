@@ -41,7 +41,7 @@ public class snackscost extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Monospaced", 1, 22)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "     Items                     cost", " ", " chitos                        50 /-", " cheese nachos                 100 /-", " hot pretzel                   120 /-", " popcorn                       120 /-", " chips                         180 /-", " crakers jack                  60 /-", " chex mix                      150 /-", " doritos                       50 /-", " cheez-its                     70 /-", " ", " ", " " };
+            String[] strings = { "     Items                     cost", " ", " chitos                        50 /-", " cheese nachos                 100 /-", " hot pretzel                   120 /-", " popcorn                       120 /-", " chips                         180 /-", " crakers jack                  60 /-", " chex mix                      150 /-", " doritos                       50 /-", " ", " ", " ", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -52,7 +52,7 @@ public class snackscost extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Gabriola", 1, 60)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("beverages price list");
+        jLabel2.setText("snacks price list");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(190, 50, 410, 80);
 

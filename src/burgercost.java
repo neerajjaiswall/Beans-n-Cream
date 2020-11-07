@@ -41,7 +41,7 @@ public class burgercost extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Monospaced", 1, 22)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "     Items                     cost", " ", " veg surprise               150 /-", " crispy veg                 120 /-", " paneer bhurji              70 /", " paneer king                80 /-", " chicken cheese             150 /-", " chilli cheese              120 /-", " crispy chicken             200 /-", " grill chicken              180 /-", " benjo egg                  170 /-", " king egg                   70 /-", " veg whopper                90/-", " ", " " };
+            String[] strings = { "     Items                     cost", " ", " veg surprise               150 /-", " crispy veg                 120 /-", " paneer bhurji              70 /", " paneer king                80 /-", " chicken cheese             150 /-", " chilli cheese              120 /-", " crispy chicken             200 /-", " grill chicken              180 /-", " benjo egg                  170 /-", " veg whopper                90/-", " ", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -54,7 +54,7 @@ public class burgercost extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("burger price list");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(190, 40, 344, 80);
+        jLabel2.setBounds(190, 40, 350, 80);
 
         jButton1.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jButton1.setText("PROCEED");

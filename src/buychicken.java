@@ -27,6 +27,8 @@ public class buychicken extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
@@ -51,6 +53,20 @@ public class buychicken extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
+
+        jLabel11.setFont(new java.awt.Font("MV Boli", 1, 22)); // NOI18N
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(320, 680, 300, 30);
+
+        jButton1.setFont(new java.awt.Font("MV Boli", 1, 22)); // NOI18N
+        jButton1.setText("order now ");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(390, 600, 170, 40);
 
         jLabel2.setFont(new java.awt.Font("MV Boli", 1, 22)); // NOI18N
         jLabel2.setText("chicken fries");
@@ -88,7 +104,7 @@ public class buychicken extends javax.swing.JFrame {
         jTextField4.setBounds(290, 300, 110, 30);
 
         jLabel6.setFont(new java.awt.Font("MV Boli", 1, 22)); // NOI18N
-        jLabel6.setText("chicken chilli");
+        jLabel6.setText("fried chicken");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(550, 300, 230, 30);
 
@@ -187,6 +203,36 @@ public class buychicken extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        int a = 150, b = 50, c = 70, d = 150, e = 150, f = 200, g = 240, h = 120 ;
+        int af, bf, cf, df, ef, ff, gf, hf;
+//        if(jTextField2.getText() == null) af =0;
+        String temp;
+//        temp = jTextField2.getText();
+        if(jTextField2.getText().isEmpty()) af =0;
+        else af = Integer.parseInt(jTextField2.getText());
+        if(jTextField3.getText().isEmpty()) bf =0;
+        else bf = Integer.parseInt(jTextField3.getText());
+        if(jTextField4.getText().isEmpty()) cf =0;
+        else cf = Integer.parseInt(jTextField4.getText());
+        if(jTextField5.getText().isEmpty()) df =0;
+        else df = Integer.parseInt(jTextField5.getText());
+        if(jTextField1.getText().isEmpty()) ef =0;
+        else ef = Integer.parseInt(jTextField1.getText());
+        if(jTextField6.getText().isEmpty()) ff =0;
+        else ff = Integer.parseInt(jTextField6.getText());
+        if(jTextField7.getText().isEmpty()) gf =0;
+        else gf = Integer.parseInt(jTextField7.getText());
+        if(jTextField8.getText().isEmpty()) hf =0;
+        else hf = Integer.parseInt(jTextField8.getText());
+        
+        int total = a*af + b*bf + c*cf + d*df + e*ef + f*ff + g*gf + h * hf;
+//        if(jTextField2.getText() == null ) 
+//        jLabel3.setText(""+total);
+        jLabel11.setText("Total Amount : " + total);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -223,10 +269,12 @@ public class buychicken extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

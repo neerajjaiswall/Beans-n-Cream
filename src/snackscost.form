@@ -68,7 +68,7 @@
                     <StringItem index="7" value=" crakers jack                  60 /-"/>
                     <StringItem index="8" value=" chex mix                      150 /-"/>
                     <StringItem index="9" value=" doritos                       50 /-"/>
-                    <StringItem index="10" value=" cheez-its                     70 /-"/>
+                    <StringItem index="10" value=" "/>
                     <StringItem index="11" value=" "/>
                     <StringItem index="12" value=" "/>
                     <StringItem index="13" value=" "/>
@@ -89,7 +89,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="beverages price list"/>
+            <Property name="text" type="java.lang.String" value="snacks price list"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

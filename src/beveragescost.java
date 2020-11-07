@@ -41,7 +41,7 @@ public class beveragescost extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Monospaced", 1, 22)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "     Items                     cost", " ", " pepsi                         100 /-", " mirinda                       100 /-", " 7up                           120 /-", " mountain dew                  120 /-", " redbull enery drink           180 /-", " mango shake                   60 /-", " cappuccino                    150 /-", " latte                         50 /-", " americano                     70 /-", " chocolate shake               150 /-", " black currant shake           150 /-", " cookie crumble shake          200 /-", " american chicken              240 /-", " chicken hotdog                120 /-", " ", " " };
+            String[] strings = { "     Items                     cost", " ", " pepsi                         100 /-", " mirinda                       100 /-", " 7up                           120 /-", " mountain dew                  120 /-", " redbull enery drink           180 /-", " mango shake                   60 /-", " cappuccino                    150 /-", " latte                         50 /-", " americano                     70 /-", " chocolate shake               150 /-", " black currant shake           150 /-", " cookie crumble shake          200 /-", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
