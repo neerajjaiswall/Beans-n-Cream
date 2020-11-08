@@ -134,14 +134,15 @@ public class signup extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        String name, username, password, phoneno;
+        String name, username, password, phoneno, email;
         name = jTextField1.getText();
         username = jTextField3.getText();
         phoneno = jTextField2.getText();
         password = jPasswordField1.getText();
+        email = jTextField4.getText();
         int userid = 1;
         try {
-            //Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/hotel", uid = "root", psd = "neeraj";
             char a = '"';
             char b = '"';
@@ -157,8 +158,8 @@ public class signup extends javax.swing.JFrame {
             {
                 userid = res.getInt(1);
             }
-            String query = "insert into beans values (" + "'" + (userid+1) + "'" + ",'" + username + "','" + name + "','" 
-                    + phoneno + "','"+ password + "');";
+            String query = "insert into beans values ("   + (userid+1)+ ",'" + username + "','" + name + "','" 
+                    + phoneno + "','"+ password+ "','" + email + "');";
             int rs = smt.executeUpdate(query);
             JOptionPane.showMessageDialog(null, "account successfully created ");
             con.close();

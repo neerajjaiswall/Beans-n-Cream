@@ -125,6 +125,7 @@ public class login extends javax.swing.JFrame {
             {
                 beansn_cream ll = new beansn_cream();
                 ll.setVisible(true);
+                dispose();
             }
             else 
             {
