@@ -92,12 +92,14 @@ public class login_or_signup extends javax.swing.JFrame {
         // TODO add your handling code here:
         login obj = new login();
         obj.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         signup obj = new signup();
         obj.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

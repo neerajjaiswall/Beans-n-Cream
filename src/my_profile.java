@@ -229,7 +229,7 @@ public class my_profile extends javax.swing.JFrame {
             char a = '"';
             char b = '"';
             char c = ',';
-            String queryfull = "update beans set name = " +'"'+ name +'"' + ',' + "username = "+'"'+username+'"' +',' + "phoneno = " + '"' + phoneno + '"' + ',' + "email = " + '"' +email+'"' + " where username = "+ '"'+usernameconstant+'"' + ';';
+            String queryfull = "update users set name = " +'"'+ name +'"' + ',' + "username = "+'"'+username+'"' +',' + "phoneno = " + '"' + phoneno + '"' + ',' + "email = " + '"' +email+'"' + " where username = "+ '"'+usernameconstant+'"' + ';';
             Connection con = DriverManager.getConnection(url, uid, psd);
             Statement smt = con.createStatement();
             int rs = smt.executeUpdate(queryfull);

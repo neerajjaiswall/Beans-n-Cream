@@ -133,8 +133,8 @@ public class change_password extends javax.swing.JFrame {
         String renewone = jPasswordField3.getText();
         
         try {
-            String query1= "select * from beans where username = "+'"' + usernameconstant +'"';
-            String query2= "update beans set password = "+'"'+newone+'"' + " where username = " + '"' + usernameconstant +'"'+';';
+            String query1= "select * from users where username = "+'"' + usernameconstant +'"';
+            String query2= "update users set password = "+'"'+newone+'"' + " where username = " + '"' + usernameconstant +'"'+';';
             String url = "jdbc:mysql://localhost:3306/hotel", uid = "root", psd = "neeraj";
             Connection con = DriverManager.getConnection(url, uid, psd);
             Statement smt = con.createStatement();
